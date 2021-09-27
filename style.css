@@ -1,0 +1,123 @@
+body::before {
+content:" ";
+width:100%;
+height:100%;
+left:0;
+top:0;
+position:fixed;
+background-image:url("img/gjk1.png");
+z-index: -1;
+}
+
+
+nav img {
+border-radius: 50%;
+border: 1px solid white;
+}
+
+.jumbotron img {
+border-radius: 50%;
+border: 3px solid #61ff86;
+margin-top: 65px;
+margin-bottom: 10px;
+}
+
+.jumbotron {
+overflow:hidden;
+padding: auto;
+background:url("img/3.png");
+background-size: cover;
+color: white;
+text-shadow: 1px 1px 2px black;
+background-attachment:fixed;
+}
+
+#about {
+overflow:hidden;
+padding-top:10px;
+}
+
+#about h3 {
+opacity: 0;
+transform: translate(0, 150px);
+}
+
+#about h3[class=about]{
+opacity: 1;
+transition: 1.5s;
+transform: translate(0, 0);
+}
+
+.pKiri, .pKanan {
+transform: translate(0, -90px) rotate(200deg);
+opacity: 0;
+
+}
+
+.pKanan {
+transform: translate(0, -90px) rotate(-200deg);
+}
+.pKiri.muncul, .pKanan.muncul{
+opacity: 1;
+transform: translate(0,0);
+transition: 2s;
+}
+
+.card.contact {
+background: blue;
+color:white;
+padding: 55px 0;
+}
+
+#project .card {
+padding: 10px;
+opacity:0;
+transition: 1s;
+width: 18rem;
+margin: 10px auto;
+}
+
+#project img {
+height: 13rem;
+}
+
+#project .card.cMuncul {
+transition: 1s;
+opacity:1;
+}
+
+
+input, textarea {
+display:block;
+margin: 0 auto;
+width:85%;
+}
+
+
+textarea {
+padding: 10px 0;
+}
+
+.form{
+width: 10rem;
+margin: 10px auto;
+}
+
+footer {
+margin:10px auto;
+padding: 20px;
+background: blue;
+font-weight: bold;
+color: white;
+text-align: center;
+margin-bottom:-10px;
+}
+
+#about, .card {
+background: rgba(255, 255, 255, 0.7);
+}
+
+.card ul {
+list-style-type: none;
+padding: 10px 0;
+}
